@@ -1,0 +1,48 @@
+{
+  "_from": "jsonresume-theme-spartan",
+  "_id": "jsonresume-theme-spartan@0.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-CQDFnTOsmoaa0OTtDwLAYZnXmfqeDky/kn3oWwqmsMkSoO0O41scUlaX0Y0bxZg9VghSrojrdMN7k9MMeAkbfw==",
+  "_location": "/jsonresume-theme-spartan",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "jsonresume-theme-spartan",
+    "name": "jsonresume-theme-spartan",
+    "escapedName": "jsonresume-theme-spartan",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jsonresume-theme-spartan/-/jsonresume-theme-spartan-0.3.0.tgz",
+  "_shasum": "f0780ddb77d8255926c7cef65b0a33658170e21e",
+  "_spec": "jsonresume-theme-spartan",
+  "_where": "/home/steve/Documents/Projects/Career/resume",
+  "author": {
+    "name": "Francesco Esposito",
+    "email": "fraesps@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/francescoes/jsonresume-theme-spartan/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "handlebars": ">=4.5.3",
+    "moment": ">=2.24.0"
+  },
+  "deprecated": false,
+  "description": "Minimal, clean and elegant theme for JSON Resume",
+  "homepage": "https://github.com/francescoes/jsonresume-theme-spartan#readme",
+  "license": "MIT",
+  "name": "jsonresume-theme-spartan",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francescoes/jsonresume-theme-spartan.git"
+  },
+  "version": "0.3.0"
+}
