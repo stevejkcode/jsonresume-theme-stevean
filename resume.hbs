@@ -486,6 +486,64 @@
 					</section>
 				</section>
 			{{/if}}
+
+			{{#if resume.body}}
+				{{#resume.body}}
+					<br>
+					<section class="section">
+						<div>
+							{{#if date}}
+								{{#date}}
+									<span class="letterheader">
+										<div>{{month}} {{day}}, {{year}}</div>
+									</span>
+								{{/date}}
+							{{/if}}
+
+							{{#if header}}
+								{{#header}}
+									<span class="letterheader">
+										<br>
+										{{#if name}}<div>{{name}}</div>{{/if}}
+										{{#if address}}<div>{{address}}</div>{{/if}}
+										{{#if city-state}}<div>{{city-state}}</div>{{/if}}
+										{{#if phone}}<div>{{phone}}</div>{{/if}}
+										{{#if email}}<div>{{email}}</div>{{/if}}
+										<br>
+									</span>
+								{{/header}}
+							{{/if}}
+
+							{{#if salutation}}
+								<div>
+									{{salutation}}
+								</div>
+								<br>
+							{{/if}}
+						</div>
+
+						{{#if paragraphs.length}}
+							<div>
+								{{#each paragraphs}}
+									<div>{{text}}</div><br>
+								{{/each}}
+
+								{{#if footer}}
+									{{#footer}}
+										<br>
+										<span>
+											<div>{{salutation}}</div>
+											<div>{{name}}</div>
+											<div><img src="../signature.png" height="30%" width="30%"></img></div>
+										</span>
+									{{/footer}}
+								{{/if}}
+							</div>
+						{{/if}}
+
+					</section>
+				{{/resume.body}}
+			{{/if}}
 		</div>
 	</body>
 
