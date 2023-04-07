@@ -471,15 +471,47 @@
 					<section id="references">
 						{{#each resume.references}}
 						<div class="item">
-							{{#if reference}}
-							<blockquote class="reference">
-								&#8220;&#32;{{reference}}&#32;&#8221;
-							</blockquote>
-							{{/if}}
 							{{#if name}}
 							<div class="name">
-								{{name}}
+								<h3 class="institution">{{name}}</h3>
 							</div>
+							{{/if}}
+
+							{{#if title}}
+								<div class="title">{{title}}</div>
+							{{/if}}
+
+							{{#if company}}
+								{{#if company.name}}
+									<div class="name">{{company.name}}</div>
+								{{/if}}
+
+								{{#if company.address}}
+									<div class="address">{{company.address}}</div>
+								{{/if}}
+
+								{{#if company.address_2}}
+									<div class="address">{{company.address_2}}</div>
+								{{/if}}
+
+								{{#if company.city-state}}
+									<div class="address">{{company.city-state}}</div>
+								{{/if}}
+							{{/if}}
+
+							{{#if phone}}
+								<div class="phone">{{phone}}</div>
+							{{/if}}
+
+							{{#if email}}
+								<div class="email">{{email}}</div>
+							{{/if}}
+
+							{{#if reference}}
+								<br>
+								<blockquote class="reference">
+									{{reference}}
+								</blockquote>
 							{{/if}}
 						</div>
 						{{/each}}
@@ -539,6 +571,18 @@
 									{{/footer}}
 								{{/if}}
 							</div>
+						{{/if}}
+
+						{{#if references.length}}
+							<div>
+								{{#each references}}
+									<span>
+										{{#if name}}<div>{{name}}</div>{{/if}}
+										{{#if title}}<div>{{title}}</div>{{/if}}
+									</span><br>
+								{{/each}}
+							</div>
+							<br>
 						{{/if}}
 
 					</section>
